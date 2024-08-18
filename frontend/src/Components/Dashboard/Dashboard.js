@@ -22,19 +22,19 @@ function Dashboard() {
                     <div className="chart-con">
                         <Chart />
                         <div className="amount-con">
-                            <div className="income">
+                            <div className="My income">
                                 <h2>Total Income</h2>
                                 <p>
                                     {dollar} {totalIncome()}
                                 </p>
                             </div>
-                            <div className="expense">
+                            <div className="My expense">
                                 <h2>Total Expense</h2>
                                 <p>
                                     {dollar} {totalExpenses()}
                                 </p>
                             </div>
-                            <div className="balance">
+                            <div className="My balance">
                                 <h2>Total Balance</h2>
                                 <p>
                                     {dollar} {totalBalance()}
@@ -44,8 +44,8 @@ function Dashboard() {
                     </div>
                     <div className="history-con">
                         <History />
-                        <h2 className="salary-title">Min <span>Salary</span>Max</h2>
-                        <div className="salary-item">
+                        <h2 className="My salary-title">Min <span>Salary</span>Max</h2>
+                        <div className="My salary-item">
                             <p>
                                 ${Math.min(...incomes.map(item => item.amount))}
                             </p>
@@ -53,8 +53,8 @@ function Dashboard() {
                                 ${Math.max(...incomes.map(item => item.amount))}
                             </p>
                         </div>
-                        <h2 className="salary-title">Min <span>Expense</span>Max</h2>
-                        <div className="salary-item">
+                        <h2 className="My salary-title">Min <span>Expense</span>Max</h2>
+                        <div className="My salary-item">
                             <p>
                                 ${Math.min(...expenses.map(item => item.amount))}
                             </p>

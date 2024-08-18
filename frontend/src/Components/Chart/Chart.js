@@ -36,7 +36,7 @@ function Chart() {
         }),
         datasets: [
             {
-                label: 'Income',
+                label: 'My Income',
                 data: [
                     ...incomes.map((income) => {
                         const {amount} = income
@@ -47,7 +47,7 @@ function Chart() {
                 tension: .2
             },
             {
-                label: 'Expenses',
+                label: 'My Expenses',
                 data: [
                     ...expenses.map((expense) => {
                         const {amount} = expense
