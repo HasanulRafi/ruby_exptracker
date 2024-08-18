@@ -1,4 +1,12 @@
 import {createGlobalStyle} from 'styled-components'
+// Previous setting
+//:root
+//--primary-color: #222260;
+//--primary-color2: 'color: rgba(34, 34, 96, .6)';
+//--primary-color3: 'color: rgba(34, 34, 96, .4)';
+//
+//body
+//--color-green: #42AD00;
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -9,10 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --primary-color: #222260;
-        --primary-color2: 'color: rgba(34, 34, 96, .6)';
-        --primary-color3: 'color: rgba(34, 34, 96, .4)';
-        --color-green: #42AD00;
+        --primary-color: purple;
+        --primary-color2: 'color: purple';
+        --primary-color3: 'color: blue';
+        --color-green: purple;
         --color-grey: #aaa;
         --color-accent: #F56692;
         --color-delete: #FF0000;
@@ -22,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Nunito', sans-serif;
         font-size: clamp(1rem, 1.5vw, 1.2rem);
         overflow: hidden;
-        color: rgba(34, 34, 96, .6);
+        color: orange;
     }
 
     h1, h2, h3, h4, h5, h6{
